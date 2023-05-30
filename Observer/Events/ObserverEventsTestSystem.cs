@@ -4,6 +4,10 @@ public class ObserverEventsTestSystem: ITestSystem
 {
   public async Task Test()
   {
+    Console.WriteLine();
+    Console.WriteLine("--- Observer pattern as events");
+    Console.WriteLine();
+
     // Create an instance of the provider class
     var monitor = new BtcPriceMonitor();
 
