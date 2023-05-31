@@ -3,13 +3,15 @@ using C_Sharp_Patterns.Observer.BuiltInInterface;
 using C_Sharp_Patterns.Observer.CustomInterface;
 using C_Sharp_Patterns.Observer.Events;
 using C_Sharp_Patterns.Strategy;
+using C_Sharp_Patterns.TemplateMethod;
 
 IEnumerable<ITestSystem> tests = new ITestSystem[]
 {
   new ObserverEventsTestSystem(),
   new ObserverCustomInterfaceTestSystem(),
   new ObserverBuiltInInterfaceTestSystem(),
-  new StrategyTestSystem()
+  new StrategyTestSystem(),
+  new TemplateMethodTestSystem()
 };
 
 Console.WriteLine();
