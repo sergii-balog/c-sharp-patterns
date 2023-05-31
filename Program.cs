@@ -2,12 +2,14 @@
 using C_Sharp_Patterns.Observer.BuiltInInterface;
 using C_Sharp_Patterns.Observer.CustomInterface;
 using C_Sharp_Patterns.Observer.Events;
+using C_Sharp_Patterns.Strategy;
 
 IEnumerable<ITestSystem> tests = new ITestSystem[]
 {
   new ObserverEventsTestSystem(),
   new ObserverCustomInterfaceTestSystem(),
-  new ObserverBuiltInInterfaceTestSystem()
+  new ObserverBuiltInInterfaceTestSystem(),
+  new StrategyTestSystem()
 };
 
 Console.WriteLine();
