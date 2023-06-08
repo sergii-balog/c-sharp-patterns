@@ -1,6 +1,7 @@
 ﻿using C_Sharp_Patterns;
 using C_Sharp_Patterns.Command;
 using C_Sharp_Patterns.Iterator;
+using C_Sharp_Patterns.Mediator;
 using C_Sharp_Patterns.Observer.BuiltInInterface;
 using C_Sharp_Patterns.Observer.CustomInterface;
 using C_Sharp_Patterns.Observer.Events;
@@ -17,7 +18,8 @@ IEnumerable<ITestSystem> tests = new ITestSystem[]
   // new TemplateMethodTestSystem(),
   // new CommandTestSystem(),
   new IteratorTestSystem(),
-  new StateTestSystem()
+  new StateTestSystem(),
+  new MediatorTestSystem()
 };
 
 Console.WriteLine();
