@@ -1,4 +1,5 @@
 ﻿using C_Sharp_Patterns;
+using C_Sharp_Patterns.ChainOfResponsibility;
 using C_Sharp_Patterns.Command;
 using C_Sharp_Patterns.Iterator;
 using C_Sharp_Patterns.Mediator;
@@ -19,7 +20,8 @@ IEnumerable<ITestSystem> tests = new ITestSystem[]
   // new CommandTestSystem(),
   new IteratorTestSystem(),
   new StateTestSystem(),
-  new MediatorTestSystem()
+  new MediatorTestSystem(),
+  new ChainOfResponsibilityTestSystem()
 };
 
 Console.WriteLine();
