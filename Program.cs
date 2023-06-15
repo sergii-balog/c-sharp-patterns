@@ -1,15 +1,16 @@
 ﻿using C_Sharp_Patterns;
-using C_Sharp_Patterns.ChainOfResponsibility;
-using C_Sharp_Patterns.Command;
-using C_Sharp_Patterns.Iterator;
-using C_Sharp_Patterns.Mediator;
-using C_Sharp_Patterns.Observer.BuiltInInterface;
-using C_Sharp_Patterns.Observer.CustomInterface;
-using C_Sharp_Patterns.Observer.Events;
-using C_Sharp_Patterns.State;
-using C_Sharp_Patterns.Strategy;
-using C_Sharp_Patterns.TemplateMethod;
-using C_Sharp_Patterns.Visitor;
+using C_Sharp_Patterns.BehavioralPatterns.ChainOfResponsibility;
+using C_Sharp_Patterns.BehavioralPatterns.Command;
+using C_Sharp_Patterns.BehavioralPatterns.Interpreter;
+using C_Sharp_Patterns.BehavioralPatterns.Iterator;
+using C_Sharp_Patterns.BehavioralPatterns.Mediator;
+using C_Sharp_Patterns.BehavioralPatterns.Observer.BuiltInInterface;
+using C_Sharp_Patterns.BehavioralPatterns.Observer.CustomInterface;
+using C_Sharp_Patterns.BehavioralPatterns.Observer.Events;
+using C_Sharp_Patterns.BehavioralPatterns.State;
+using C_Sharp_Patterns.BehavioralPatterns.Strategy;
+using C_Sharp_Patterns.BehavioralPatterns.TemplateMethod;
+using C_Sharp_Patterns.BehavioralPatterns.Visitor;
 
 IEnumerable<ITestSystem> behavioralPatterns = new ITestSystem[]
 {
@@ -23,7 +24,8 @@ IEnumerable<ITestSystem> behavioralPatterns = new ITestSystem[]
   new StateTestSystem(),
   new MediatorTestSystem(),
   new ChainOfResponsibilityTestSystem(),
-  new VisitorTestSystem()
+  new VisitorTestSystem(),
+  new InterpreterTestSystem()
 };
 
 var tests = new List<ITestSystem>();
