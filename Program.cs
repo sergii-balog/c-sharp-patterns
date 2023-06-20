@@ -11,6 +11,7 @@ using C_Sharp_Patterns.BehavioralPatterns.State;
 using C_Sharp_Patterns.BehavioralPatterns.Strategy;
 using C_Sharp_Patterns.BehavioralPatterns.TemplateMethod;
 using C_Sharp_Patterns.BehavioralPatterns.Visitor;
+using C_Sharp_Patterns.CreationalPatterns.Singleton;
 
 IEnumerable<ITestSystem> behavioralPatterns = new ITestSystem[]
 {
@@ -28,8 +29,14 @@ IEnumerable<ITestSystem> behavioralPatterns = new ITestSystem[]
   new InterpreterTestSystem()
 };
 
+IEnumerable<ITestSystem> creationalPatterns = new[]
+{
+  new SingletonTestSystem()
+};
+
 var tests = new List<ITestSystem>();
-tests.AddRange(behavioralPatterns);
+//tests.AddRange(behavioralPatterns);
+tests.AddRange(creationalPatterns);
 
 Console.WriteLine();
 Console.WriteLine("Hello to C# patterns!");
