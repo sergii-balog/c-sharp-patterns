@@ -11,6 +11,7 @@ using C_Sharp_Patterns.BehavioralPatterns.State;
 using C_Sharp_Patterns.BehavioralPatterns.Strategy;
 using C_Sharp_Patterns.BehavioralPatterns.TemplateMethod;
 using C_Sharp_Patterns.BehavioralPatterns.Visitor;
+using C_Sharp_Patterns.CreationalPatterns.AbstractFactory;
 using C_Sharp_Patterns.CreationalPatterns.Builder;
 using C_Sharp_Patterns.CreationalPatterns.FactoryMethod;
 using C_Sharp_Patterns.CreationalPatterns.Prototype;
@@ -37,7 +38,8 @@ IEnumerable<ITestSystem> creationalPatterns = new ITestSystem[]
   new SingletonTestSystem(),
   new FactoryMethodTestSystem(),
   new BuilderTestSystem(),
-  new PrototypeTestSystem()
+  new PrototypeTestSystem(),
+  new AbstractFactoryTestSystem()
 };
 
 var tests = new List<ITestSystem>();
