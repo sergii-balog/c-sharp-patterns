@@ -16,6 +16,7 @@ using C_Sharp_Patterns.CreationalPatterns.Builder;
 using C_Sharp_Patterns.CreationalPatterns.FactoryMethod;
 using C_Sharp_Patterns.CreationalPatterns.Prototype;
 using C_Sharp_Patterns.CreationalPatterns.Singleton;
+using C_Sharp_Patterns.StructuralPatterns.Facade;
 
 IEnumerable<ITestSystem> behavioralPatterns = new ITestSystem[]
 {
@@ -42,9 +43,15 @@ IEnumerable<ITestSystem> creationalPatterns = new ITestSystem[]
   new AbstractFactoryTestSystem()
 };
 
+IEnumerable<ITestSystem> structuralPatterns= new ITestSystem[]
+{
+  new FacadeTestSystem()
+};
+
 var tests = new List<ITestSystem>();
 tests.AddRange(behavioralPatterns);
 tests.AddRange(creationalPatterns);
+tests.AddRange(structuralPatterns);
 
 Console.WriteLine();
 Console.WriteLine("Hello to C# patterns!");
