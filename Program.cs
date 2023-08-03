@@ -17,6 +17,7 @@ using C_Sharp_Patterns.CreationalPatterns.FactoryMethod;
 using C_Sharp_Patterns.CreationalPatterns.Prototype;
 using C_Sharp_Patterns.CreationalPatterns.Singleton;
 using C_Sharp_Patterns.StructuralPatterns.Adapter;
+using C_Sharp_Patterns.StructuralPatterns.Decorator;
 using C_Sharp_Patterns.StructuralPatterns.Facade;
 
 IEnumerable<ITestSystem> behavioralPatterns = new ITestSystem[]
@@ -47,7 +48,8 @@ IEnumerable<ITestSystem> creationalPatterns = new ITestSystem[]
 IEnumerable<ITestSystem> structuralPatterns= new ITestSystem[]
 {
   new FacadeTestSystem(),
-  new AdapterTestSystem()
+  new AdapterTestSystem(),
+  new DecoratorTestSystem()
 };
 
 var tests = new List<ITestSystem>();
