@@ -19,6 +19,7 @@ using C_Sharp_Patterns.CreationalPatterns.Singleton;
 using C_Sharp_Patterns.StructuralPatterns.Adapter;
 using C_Sharp_Patterns.StructuralPatterns.Decorator;
 using C_Sharp_Patterns.StructuralPatterns.Facade;
+using C_Sharp_Patterns.StructuralPatterns.Proxy;
 
 IEnumerable<ITestSystem> behavioralPatterns = new ITestSystem[]
 {
@@ -49,7 +50,8 @@ IEnumerable<ITestSystem> structuralPatterns= new ITestSystem[]
 {
   new FacadeTestSystem(),
   new AdapterTestSystem(),
-  new DecoratorTestSystem()
+  new DecoratorTestSystem(),
+  new ProxyTestSystem()
 };
 
 var tests = new List<ITestSystem>();
@@ -58,7 +60,7 @@ tests.AddRange(creationalPatterns);
 tests.AddRange(structuralPatterns);
 
 Console.WriteLine();
-Console.WriteLine("Hello to C# patterns!");
+Console.WriteLine("Hello from C# patterns!");
 
 foreach (var test in tests)
 {
