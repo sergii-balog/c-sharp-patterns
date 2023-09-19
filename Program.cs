@@ -17,6 +17,7 @@ using C_Sharp_Patterns.CreationalPatterns.FactoryMethod;
 using C_Sharp_Patterns.CreationalPatterns.Prototype;
 using C_Sharp_Patterns.CreationalPatterns.Singleton;
 using C_Sharp_Patterns.StructuralPatterns.Adapter;
+using C_Sharp_Patterns.StructuralPatterns.Bridge;
 using C_Sharp_Patterns.StructuralPatterns.Decorator;
 using C_Sharp_Patterns.StructuralPatterns.Facade;
 using C_Sharp_Patterns.StructuralPatterns.Proxy;
@@ -51,7 +52,8 @@ IEnumerable<ITestSystem> structuralPatterns= new ITestSystem[]
   new FacadeTestSystem(),
   new AdapterTestSystem(),
   new DecoratorTestSystem(),
-  new ProxyTestSystem()
+  new ProxyTestSystem(),
+  new BridgeTestSystem()
 };
 
 var tests = new List<ITestSystem>();
